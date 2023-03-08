@@ -1,0 +1,31 @@
+@import "./variables";
+.relatedProducts {
+  max-width: $maxWidth;
+  margin: $marginCenterX;
+  padding-top: 39px;
+  > p {
+    text-align: center;
+    font-weight: $bold;
+    font-size: 15px;
+  }
+  > :first-child {
+    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+    max-width: 1138px;
+    margin: $marginCenterX;
+    h1 {
+      color: $rosePrimary;
+      text-align: center;
+      width: 100%;
+      white-space: nowrap;
+      margin: 0 34px;
+    }
+    > div {
+      height: 1px;
+      width: 100%;
+      content: "";
+      background-color: #dedede;
+    }
+  }
+}

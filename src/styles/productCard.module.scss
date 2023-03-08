@@ -1,0 +1,46 @@
+@import "./variables";
+.productCard {
+  background-color: $whitePrimary;
+  width: 270px;
+  height: 500px;
+  box-shadow: 0px 3px 19px rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+  padding: 17px 12px 16px 11px !important;
+
+  > :first-child {
+    width: 100%;
+    margin-bottom: 5px;
+    img {
+      object-fit: fill;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  :nth-child(2) {
+    color: $blackOne;
+    font-weight: $light;
+    font-size: 15px;
+  }
+  :nth-child(3) {
+    color: $grayQuaternary;
+    text-decoration: line-through;
+    font-weight: $regular;
+    font-size: 16px;
+  }
+  :nth-child(4) {
+    color: $blackOne;
+    font-weight: $bold;
+    font-size: 20px;
+  }
+  :nth-child(5) {
+    color: $blackOne;
+    font-weight: $regular;
+    font-size: 12px;
+  }
+  :nth-child(6) {
+    color: $rosePrimary;
+    font-weight: $regular;
+    font-size: 12px;
+  }
+}

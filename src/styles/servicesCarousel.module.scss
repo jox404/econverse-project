@@ -1,0 +1,21 @@
+@import "./variables";
+
+.servicesCarousel {
+  max-width: $maxWidth;
+  margin: $marginCenterX;
+  margin-top: 34px;
+}
+.carousel {
+  > div > div {
+    div {
+      padding-top: 2px;
+      margin: $marginCenterX;
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .servicesCarousel {
+    max-width: calc(((1280px / 7) - 128px) + 1280px);
+  }
+}

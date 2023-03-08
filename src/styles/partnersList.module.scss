@@ -1,0 +1,10 @@
+@import "./variables";
+
+.partnersList {
+  max-width: $maxWidth;
+  height: 350px;
+  margin: $marginCenterX;
+  margin-top: 61px;
+  display: flex;
+  justify-content: space-between;
+}

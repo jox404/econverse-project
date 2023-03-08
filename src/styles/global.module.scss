@@ -1,0 +1,18 @@
+@import "./variables";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  color: $blackOne;
+}
+html {
+  background-color: $whitePrimary;
+  height: 300vh;
+}
+
+h3 {
+  background-color: black;
+}

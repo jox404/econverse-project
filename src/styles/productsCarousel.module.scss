@@ -1,0 +1,21 @@
+@import "./variables";
+.productsCarousel {
+  max-width: calc(((1380px / 4) - 270px) + 1280px);
+  margin: $marginCenterX;
+  padding-top: 10px;
+}
+
+.carousel {
+  > div > div {
+    div {
+      padding: 10px 0px;
+      margin: $marginCenterX;
+    }
+  }
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  background-color: aquamarine;
+}

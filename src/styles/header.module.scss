@@ -1,0 +1,103 @@
+@import "./variables";
+.header {
+  max-width: $maxWidth;
+  margin: $marginCenterX;
+  height: 144px;
+  background-color: $whitePrimary;
+  .benefits {
+    height: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .benefit {
+      display: flex;
+      align-items: center;
+      margin: 0px 59.5px;
+      > :first-child {
+        margin-right: 9px;
+        display: flex;
+        align-items: center;
+      }
+      > :last-child {
+        display: flex;
+        font-size: 12px;
+        white-space: pre;
+      }
+      .highlighted {
+        color: $rosePrimary;
+        font-weight: $semiBold;
+      }
+      .unfocused {
+        color: $graySecondary;
+        font-weight: $medium;
+      }
+    }
+  }
+  .navBar {
+    height: 72px;
+    width: 100%;
+    padding: 0px 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0px solid $whiteSecondary;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+
+    .search {
+      > div {
+        height: 48px;
+        width: 657px;
+        display: flex;
+        align-items: center;
+        background-color: $whiteTertiary;
+        border-radius: 10px;
+        padding: 0px 16px 0 24px;
+        img {
+          width: 28px;
+          height: 28px;
+        }
+        input {
+          height: 100%;
+          width: 100%;
+          flex: 1;
+          border: none;
+          position: relative;
+          background-color: rgba(255, 255, 255, 0);
+        }
+        *:focus {
+          outline: none;
+        }
+      }
+    }
+    > :last-child {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 216px;
+    }
+  }
+  .filterList {
+    height: 40px;
+    width: 100%;
+    ul {
+      height: 100%;
+      box-shadow: 0px 8px 16px rgba(57, 48, 19, 0.12);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      li {
+        text-transform: uppercase;
+        font-weight: $semiBold;
+        color: $graySecondary;
+        font-size: 12px;
+      }
+      :hover {
+        cursor: pointer;
+      }
+      .selected {
+        color: $rosePrimary;
+      }
+    }
+  }
+}

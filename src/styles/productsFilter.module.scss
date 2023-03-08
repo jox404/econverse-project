@@ -1,0 +1,27 @@
+@import "./variables";
+.productsFilter {
+  max-width: $maxWidth;
+  margin: $marginCenterX;
+  margin-top: -20px;
+  ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    li {
+      background-color: $whitePrimary;
+      width: 100%;
+      text-align: center;
+      border: 1px solid #bdbdbd;
+      height: 40px;
+      font-weight: $regular;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $grayPrimary;
+    }
+    .selected {
+      color: $rosePrimary;
+      font-weight: $bold;
+    }
+  }
+}
